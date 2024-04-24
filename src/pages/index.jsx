@@ -1,4 +1,5 @@
 import Header from "@/components/layouts/header/Header";
+import SideBar from "@/components/layouts/header/SideBar/SideBar";
 import Footer from "@/components/layouts/footer/Footer";
 import TopSlider from "@/components/patterns/topSlider/TopSlider";
 import CategorySlider from "@/components/patterns/categorySlider/CategorySlider";
@@ -29,6 +30,7 @@ export async function getServerSideProps() {
 const Index = ({ categories, products, data }) => {
   return (
     <main className="main-container">
+      <SideBar />
       <Header />
       <TopSlider />
       <CategorySlider categories={categories} />
