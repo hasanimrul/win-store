@@ -1,0 +1,136 @@
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.cardContainer img {
+  width: 192px;
+  /* height: 120px; */
+}
+
+.secondPart img {
+  width: 100%;
+}
+
+.firstPart,
+.thirdPart {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.secondPart,
+.thirdPart .bottomCard {
+  position: relative;
+}
+
+.orderStatus {
+  display: flex;
+  gap: 3rem;
+}
+
+.offerTag {
+  font-size: 24px;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  padding: 1rem 2rem;
+  max-width: max-content;
+}
+
+.gradientOfferTag {
+  background: linear-gradient(to right, #CC95C0, #DBD4B4, #7AA1D2);
+  font-size: 36px;
+  padding: 1rem 2rem;
+  max-width: max-content;
+}
+
+.circleOfferTag {
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 2rem;
+  max-width: max-content;
+  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
+.redCircleOfferTag {
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 50%;
+  padding: 2rem;
+  max-width: max-content;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+.yellowCircleOfferTag {
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 50%;
+  padding: 2rem;
+  max-width: max-content;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: linear-gradient(to right, #f09819, #edde5d);
+}
+
+.topCard,
+.bottomCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bluePrice {
+  font-size: 27px;
+  color: #00cad7;
+  font-weight: 400;
+}
+.redPrice {
+  font-size: 27px;
+  color: #c82020;
+  font-weight: 400;
+}
+
+.yellowPrice {
+  font-size: 27px;
+  color: #d2a62c;
+  font-weight: 400;
+}
+
+.specialOffer {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.redSpecialOffer {
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+}
+.rightPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.lastProduct{
+    padding-left: 4rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}

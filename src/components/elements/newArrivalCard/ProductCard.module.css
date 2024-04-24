@@ -1,0 +1,50 @@
+.productCard {
+    border: solid 1px #00000021;
+    max-width: max-content;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.title {
+    color: #034E53;
+    font-size: 15px;
+    font-weight: 400;
+}
+.productCard img {
+    width: 158px;
+    height: 130px;
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.newPrice {
+   color: #0AAEB9;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.productCard button {
+    background-color: #15ADB7;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: .5rem;
+    align-self: center;
+}

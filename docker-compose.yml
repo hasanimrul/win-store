@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+  nrel-client:
+    image: nrel-client
+    build:
+      context: ./
+      # target: dev
+      dockerfile: Dockerfile
+    volumes:
+        - .:/app
+        - /app/node_modules
+        - /app/.next
+        - /app/src/pages
+        - /app/out
+    ports:
+      - "3004:3000"
+    env_file: .env
+
