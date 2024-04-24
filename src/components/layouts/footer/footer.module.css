@@ -8,7 +8,7 @@
 }
 .footerWrapper {
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
     color: #fff;
     justify-content: space-between;
     align-items: center;
